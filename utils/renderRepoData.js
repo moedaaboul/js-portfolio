@@ -1,4 +1,4 @@
-const jobsModal = document.querySelector(".repo-modal");
+const repoModal = document.querySelector(".repo-modal");
 // using string templates render individual job data for modal view upon the primary card h3 click
 
 const tags = `          
@@ -8,7 +8,7 @@ const tags = `
 
 // to add creation data and completion dates
 
-export function renderIndividualRepoData({ title, tags, description }) {
+export function renderRepoData({ title, tags, description }) {
   const modalString = `
   <div class="modal-background"></div>
   <div class="card modal-content has-background-white py-5 px-5">
@@ -41,5 +41,5 @@ export function renderIndividualRepoData({ title, tags, description }) {
     </div>
   </div>
 `;
-  jobsModal.innerHTML = modalString;
+  repoModal.innerHTML = modalString;
 }
