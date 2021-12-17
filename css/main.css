@@ -14,6 +14,10 @@ VARIABLES
   margin-top: 2em;
 }
 
+/********** 
+NAVBAR MENU
+**********/
+
 .menu-container {
   display: block;
   padding: 0;
@@ -29,4 +33,10 @@ VARIABLES
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+/*changes navbar item color to is-dark theme*/
+.navbar-item {
+  color: #ffffff;
+  background-color: #363636;
 }
