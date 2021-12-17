@@ -40,3 +40,12 @@ NAVBAR MENU
   color: #ffffff;
   background-color: #363636;
 }
+
+/* .card:hover {
+  transform: scale(2, 2);
+}
+
+.card {
+  display: block;
+  transition: transform 2s;
+} */
