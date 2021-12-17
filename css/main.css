@@ -1,4 +1,32 @@
+/********** 
+VARIABLES
+**********/
+:root {
+  /* COLOURS */
+  --white: #ffffff;
+
+  /* TRANSITIONS */
+  --toggle-transition: height 350ms ease-in-out;
+}
+
 .portfolio .card {
   margin-bottom: 2em;
   margin-top: 2em;
+}
+
+.menu-container {
+  display: block;
+  padding: 0;
+  height: 0;
+  transition: var(--toggle-transition);
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-container {
+    height: auto !important;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
