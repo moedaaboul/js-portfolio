@@ -4,6 +4,7 @@ VARIABLES
 :root {
   /* COLOURS */
   --white: #ffffff;
+  --blue-repo-title: hsl(229, 86%, 56%);
 
   /* TRANSITIONS */
   --toggle-transition: height 350ms ease-in-out;
@@ -49,3 +50,9 @@ NAVBAR MENU
   display: block;
   transition: transform 2s;
 } */
+
+.card-header-title:hover {
+  color: var(--blue-repo-title);
+  text-decoration: underline;
+  cursor: pointer;
+}
