@@ -15,19 +15,21 @@ repoList.addEventListener("click", async function (event) {
     console.log(event.target.textContent);
     if (event.target.tagName === "H3") {
       console.log("babab");
-      const name = event.target.textContent;
+      const name = event.target.innerHTML;
       console.log(name);
       const data = await fetchGithubRepo(url);
       const repoRaw = data.filter((obj) => obj.name === name)[0];
       const repo = {
         title: repoRaw.name,
         url: repoRaw.html_url,
-        license: repoRaw.license,
+        license: repoRaw.license.name,
         tags: repoRaw.topics,
         language: repoRaw.language,
         description: repoRaw.description,
-        data: repoRaw.created_at,
+        date: repoRaw.created_at,
       };
+      console.log(repo.title);
+      console.log(repo.license);
       renderRepoData(repo); // after repos data is retrieved from fetch, individual repo info is rendered on screen through a modal
       repoModal.classList.add("is-active"); // modal status to active to enable the following event listener to exit modal screen on modal-background click
 
@@ -40,32 +42,3 @@ repoList.addEventListener("click", async function (event) {
     console.error(error);
   }
 });
-
-// repoList.addEventListener("click", async function (event) {
-//   try {
-//     if (event.target.tagName === "H3") {
-//       console.log("babab");
-//       const name = event.target.value;
-//       console.log(name);
-//       const data = await fetchGithubRepo(url);
-//       const repoRaw = data.filter((obj) => obj.name === name)[0];
-//       const repo = {
-//         url: repoRaw.html_url,
-//         license: repoRaw.license,
-//         topics: repoRaw.topics,
-//         language: repoRaw.language,
-//         description: repoRaw.description,
-//         data: repoRaw.created_at,
-//       };
-//       renderRepoData(job); // after repos data is retrieved from fetch, individual repo info is rendered on screen through a modal
-//       repoModal.classList.add("is-active"); // modal status to active to enable the following event listener to exit modal screen on modal-background click
-
-//       const modalBg = document.querySelector(".modal-background");
-//       modalBg.addEventListener("click", function () {
-//         repoModal.classList.remove("is-active");
-//       });
-//     }
-//   } catch (error) {
-//     console.error(error);
-//   }
-// });
