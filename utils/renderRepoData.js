@@ -1,4 +1,4 @@
-import { renderTags } from "./utils/renderTags.js";
+import { renderTags } from "./renderTags.js";
 
 const repoModal = document.querySelector(".repo-modal");
 // using string templates render individual job data for modal view upon the primary card h3 click
@@ -40,9 +40,8 @@ ${description}
       <div class="license-container is-flex is-align-items-center mb-2 mt-2">
       <img src="./images/tag.svg" alt="git-tag" />
       <p class="ml-2">
-      <span class="tag is-success ml-1">HTML</span>
-      <span class="tag is-success">CSS</span>
-      <span class="tag is-success">JavaScript</span></p>
+     ${renderTags(tags)}
+     </p>
       </div>
       <div class="license-container is-flex is-align-items-center mb-2">
   <img src="./images/git-commit.svg" alt="git-commit" />

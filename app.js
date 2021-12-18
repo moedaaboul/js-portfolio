@@ -1,6 +1,7 @@
 import "./utils/fetchGithubRepo.js";
 import "./utils/getRepoData.js";
 import "./utils/renderRepoData.js";
+import "./utils/renderTags.js";
 
 const toggleBtn = document.querySelector(".burger");
 const menuContainer = document.querySelector(".menu-container");
