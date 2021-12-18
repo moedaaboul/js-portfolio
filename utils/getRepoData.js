@@ -1,6 +1,7 @@
 import { fetchGithubRepo } from "./fetchGithubRepo.js";
 import { renderRepoData } from "./renderRepoData.js";
 import { renderTags } from "./renderTags.js";
+import { fetchCommit } from "./fetchCommit.js";
 
 const repoModal = document.querySelector(".repo-modal");
 console.log(repoModal);
@@ -19,6 +20,11 @@ repoList.addEventListener("click", async function (event) {
       const name = event.target.innerHTML;
       console.log(name);
       const data = await fetchGithubRepo(url);
+      const contributors = await fetchCommit(name);
+      const contributions = contributors
+        .filter((e) => e.login === "moedaaboul")
+        .map((e) => e.contributions)[0];
+      console.log(contributions);
       const repoRaw = data.filter((obj) => obj.name === name)[0];
       const repo = {
         title: repoRaw.name,
@@ -28,6 +34,7 @@ repoList.addEventListener("click", async function (event) {
         language: repoRaw.language,
         description: repoRaw.description,
         date: repoRaw.created_at,
+        commits: contributions,
       };
       console.log(repo.title);
       console.log(repo.license);

@@ -10,7 +10,7 @@ const tags = `
 
 // to add creation data and completion dates
 
-export function renderRepoData({ title, tags, description, license }) {
+export function renderRepoData({ title, tags, description, license, commits }) {
   const modalString = `
   <div class="modal-background"></div>
   <div class="card modal-content has-background-white py-5 px-5">
@@ -45,7 +45,7 @@ ${description}
       </div>
       <div class="license-container is-flex is-align-items-center mb-2">
   <img src="./images/git-commit.svg" alt="git-commit" />
-  <p class="ml-2">78 commits</p>
+  <p class="ml-2">${commits} commits</p>
   </div>
   <div class="license-container is-flex is-align-items-center mb-2">
   <img src="./images/award.svg" alt="git-commit" />
