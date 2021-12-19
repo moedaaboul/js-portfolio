@@ -56,3 +56,9 @@ NAVBAR MENU
   text-decoration: underline;
   cursor: pointer;
 }
+
+.portfolio-heading {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
