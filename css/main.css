@@ -167,3 +167,7 @@ SOCIAL MEDIA
 .label {
   color: white;
 }
+
+html {
+  scroll-behavior: smooth;
+}
