@@ -1,5 +1,7 @@
 import { renderTags } from "./renderTags.js";
 import { parseDate } from "./parseDate.js";
+import { parseTitle } from "./parseTitle.js";
+import { renderImages, images } from "./images.js";
 
 const repoModal = document.querySelector(".repo-modal");
 // using string templates render individual job data for modal view upon the primary card h3 click
@@ -23,7 +25,7 @@ export function renderRepoData({
   <div class="modal-background"></div>
   <div class="card modal-content has-background-white py-5 px-5">
   <header class="card-header">
-  <h3 class="card-header-title">${title}</h3>
+  <h3 class="card-header-title">${parseTitle(title)}</h3>
 </header>
 <div class="creation-date-container is-flex is-align-items-center mb-2 pt-3">
 <img class="mr-1" src="./images/calendar.svg" alt="git-tag" />
@@ -33,8 +35,8 @@ export function renderRepoData({
 ${description}
 </p>
     <div class="card-content">
-      <figure class="image is-full-width">
-        <img src="https://bulma.io/images/placeholders/128x128.png" />
+      <figure class="image image is-3by2">
+        <img src="/images/${renderImages(title)}" />
       </figure>
       <footer class="card-footer">
         <p class="card-footer-item is-flex is-align-items-center">
