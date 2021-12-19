@@ -24,8 +24,8 @@ export function renderRepoData({
   const modalString = `
   <div class="modal-background"></div>
   <div class="card modal-content has-background-white py-5 px-5">
-  <header class="card-header">
-  <h3 class="card-header-title">${parseTitle(title)}</h3>
+  <header class="card-header hero is-success">
+  <h2 class="card-header-title is-white">${parseTitle(title)}</h2>
 </header>
 <div class="creation-date-container is-flex is-align-items-center mb-2 pt-3">
 <img class="mr-1" src="./images/calendar.svg" alt="git-tag" />
