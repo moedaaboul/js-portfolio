@@ -36,7 +36,7 @@ ${description}
 </p>
     <div class="card-content">
       <figure class="image image is-3by2">
-        <img src="/images/${renderImages(title)}" />
+        <img src="./images/${renderImages(title)}" />
       </figure>
       <footer class="card-footer">
         <p class="card-footer-item is-flex is-align-items-center">
