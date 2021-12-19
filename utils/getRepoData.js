@@ -39,6 +39,14 @@ repoList.addEventListener("click", async function (event) {
       console.log(repo.title);
       console.log(repo.license);
       console.log("tags", repo.tags);
+      console.log(
+        "date",
+        repo.date
+          .split("")
+          .filter((e, i) => i < 10)
+          .join(""),
+        typeof repo.date
+      );
       renderRepoData(repo); // after repos data is retrieved from fetch, individual repo info is rendered on screen through a modal
       repoModal.classList.add("is-active"); // modal status to active to enable the following event listener to exit modal screen on modal-background click
 

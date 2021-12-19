@@ -1,4 +1,5 @@
 import { renderTags } from "./renderTags.js";
+import { parseDate } from "./parseDate.js";
 
 const repoModal = document.querySelector(".repo-modal");
 // using string templates render individual job data for modal view upon the primary card h3 click
@@ -10,14 +11,25 @@ const tags = `
 
 // to add creation data and completion dates
 
-export function renderRepoData({ title, tags, description, license, commits }) {
+export function renderRepoData({
+  title,
+  tags,
+  description,
+  license,
+  commits,
+  date,
+}) {
   const modalString = `
   <div class="modal-background"></div>
   <div class="card modal-content has-background-white py-5 px-5">
   <header class="card-header">
   <h3 class="card-header-title">${title}</h3>
 </header>
-<p class="repo-description pt-3">
+<div class="creation-date-container is-flex is-align-items-center mb-2 pt-3">
+<img class="mr-1" src="./images/calendar.svg" alt="git-tag" />
+<p class="ml-2">Creation date: ${parseDate(date)}</p>
+</div>
+<p class="repo-description">
 ${description}
 </p>
     <div class="card-content">
