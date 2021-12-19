@@ -71,3 +71,9 @@ NAVBAR MENU
   text-decoration: none;
   color: white;
 }
+
+.card a:hover {
+  color: var(--blue-repo-title) !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
