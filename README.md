@@ -51,4 +51,4 @@ Created by  -[@moedaaboul](https://github.com/moedaaboull)
 
 ## LICENSE
 This work is licensed under
-[MIT](https://github.com/moedaaboul/blob/main/LICENSE).
+[MIT](https://github.com/moedaaboul/moedaaboul.github.io/blob/main/LICENSE).
