@@ -1,5 +1,4 @@
 # moedaaboul.github.io
-Portfolio site
 
 This is a portfolio site using JavaScript and the Github API
 Live demo [_here_](https://moedaaboul.github.io/).
