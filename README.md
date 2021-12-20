@@ -2,7 +2,7 @@
 Portfolio site
 
 This is a portfolio site using JavaScript and the Github API
-Live demo [_here_]https://moedaaboul.github.io/).
+Live demo [_here_](https://moedaaboul.github.io/).
 
 ## Table of Contents
 
@@ -10,7 +10,6 @@ Live demo [_here_]https://moedaaboul.github.io/).
 - [Technologies Used](#technologies-used)
 - [Setup](#setup)
 - [Project Status](#project-status)
-- [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
 - [License](#license)
 
