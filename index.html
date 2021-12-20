@@ -89,9 +89,9 @@
       <h3 class="title is-2">Portfolio</h3>
       <h4 class="subtitle is-5">My latest works</h4>
     </div>
-    <section class="portfolio container">
-      <div class="columns">
-        <div class="column is-4">
+    <section class="portfolio container is-flex is-flex-direction-column">
+      <div class="columns row-1">
+        <div class="column is-12">
           <div class="card">
             <header class="card-header">
               <h3 class="card-header-title">jobs-finder</h3>
@@ -102,7 +102,7 @@
               </span>
             </header>
             <div class="card-content">
-              <figure class="image is-3by2">
+              <figure class="image is-6by3">
                 <img src="images/jobs-finder.gif" />
               </figure>
               <footer class="card-footer">
@@ -127,36 +127,75 @@
             </div>
           </div>
         </div>
-        <div class="column is-4">
-          <div class="card">
-            <header class="card-header">
-              <h3 class="card-header-title">quiz-app</h3>
-              <span class="is-pulled-right">
-                <span class="tag is-success">JavaScript</span>
-                <span class="tag is-success">DOM</span>
-                <span class="tag is-success">Web APIs</span>
-              </span>
-            </header>
-            <div class="card-content">
-              <figure class="image is-3by2">
-                <img src="./images/Quiz-App.gif" />
-              </figure>
-              <footer class="card-footer">
-                <p class="card-footer-item">
-                  <span>
-                    <a href="https://moedaaboul.github.io/quiz-app/">Preview</a>
-                  </span>
-                </p>
-                <p class="card-footer-item">
-                  <span>
-                    View on
-                    <a href="https://github.com/moedaaboul/quiz-app">Github</a>
-                  </span>
-                </p>
-              </footer>
-            </div>
+    </div>
+    <div class="columns row-2">
+      <div class="column is-8">
+        <div class="card">
+          <header class="card-header">
+            <h3 class="card-header-title">quiz-app</h3>
+            <span class="is-pulled-right">
+              <span class="tag is-success">JavaScript</span>
+              <span class="tag is-success">DOM</span>
+              <span class="tag is-success">Web APIs</span>
+            </span>
+          </header>
+          <div class="card-content">
+            <figure class="image">
+              <img src="./images/Quiz-App.gif" />
+            </figure>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <span>
+                  <a href="https://moedaaboul.github.io/quiz-app/">Preview</a>
+                </span>
+              </p>
+              <p class="card-footer-item">
+                <span>
+                  View on
+                  <a href="https://github.com/moedaaboul/quiz-app">Github</a>
+                </span>
+              </p>
+            </footer>
           </div>
         </div>
+      </div>
+      <div class="column is-4">
+        <div class="card">
+          <header class="card-header">
+            <h3 class="card-header-title">weather-dashboard</h3>
+            <span class="is-pulled-right">
+              <span class="tag is-success">JavaScript</span>
+              <span class="tag is-success">Third-Party APIs</span>
+            </span>
+          </header>
+          <div class="card-content">
+            <figure class="image"> 
+              <img src="images/weather-dashboard.png" />
+            </figure>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <span>
+                  <a href="https://moedaaboul.github.io/weather-dashboard/"
+                    >Preview</a
+                  >
+                </span>
+              </p>
+              <p class="card-footer-item">
+                <span>
+                  View on
+                  <a href="https://github.com/moedaaboul/weather-dashboard"
+                    >Github</a
+                  >
+                </span>
+              </p>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+      <div class="columns row-3">
         <div class="column is-4">
           <div class="card">
             <header class="card-header">
@@ -188,42 +227,7 @@
               </footer>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="columns">
-        <div class="column is-4">
-          <div class="card">
-            <header class="card-header">
-              <h3 class="card-header-title">weather-dashboard</h3>
-              <span class="is-pulled-right">
-                <span class="tag is-success">JavaScript</span>
-                <span class="tag is-success">Third-Party APIs</span>
-              </span>
-            </header>
-            <div class="card-content">
-              <figure class="image is-3by2">
-                <img src="images/weather-dashboard.png" />
-              </figure>
-              <footer class="card-footer">
-                <p class="card-footer-item">
-                  <span>
-                    <a href="https://moedaaboul.github.io/weather-dashboard/"
-                      >Preview</a
-                    >
-                  </span>
-                </p>
-                <p class="card-footer-item">
-                  <span>
-                    View on
-                    <a href="https://github.com/moedaaboul/weather-dashboard"
-                      >Github</a
-                    >
-                  </span>
-                </p>
-              </footer>
-            </div>
-          </div>
-        </div>
+        </div>        
         <div class="column is-4">
           
           <div class="card">
@@ -231,7 +235,6 @@
               <h3 class="card-header-title">work-day-scheduler</h3>
               <span class="is-pulled-right">
                 <span class="tag is-success">jQuery</span>
-                <span class="tag is-success">Bootsrap</span>
               </span>
             </header>
             <div class="card-content">
@@ -291,7 +294,6 @@
             </div>
           </div>
         </div>
-      </div>
     </section>
     <section class="section contact center-row py-5" id="contact">
       <div class="container hero is-fullheight">

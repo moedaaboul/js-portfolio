@@ -171,3 +171,38 @@ SOCIAL MEDIA
 html {
   scroll-behavior: smooth;
 }
+
+@media screen and (min-width: 769px) {
+  .row-2 .card {
+    max-height: 300px;
+    min-height: 300px;
+  }
+
+  .row-2 .card img {
+    max-height: 140px;
+  }
+}
+
+@media screen and (min-width: 1216px) {
+  .row-2 .card {
+    max-height: 400px;
+    min-height: 400px;
+  }
+
+  .row-2 .card img {
+    max-height: 260px;
+    min-height: 260px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 828px) {
+  .row-3 .card {
+    max-height: 310px;
+    min-height: 310px;
+  }
+
+  .row-1 .card img {
+    max-height: 190px;
+    min-height: 190px;
+  }
+}
