@@ -29,7 +29,6 @@ The purpose of this app is to showcase my portfolio.
 
 - Github API
 - Bulma framework
-- Bulma framework
 - Font Awesome
 - Formspree
 - JavaScript
