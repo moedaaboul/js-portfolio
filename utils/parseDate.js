@@ -1,5 +1,3 @@
-let str = "2021-11-29T10:00:50Z";
-
 export const parseDate = (str) => {
   const date = str
     .split("")
@@ -7,5 +5,3 @@ export const parseDate = (str) => {
     .join("");
   return date;
 };
-
-console.log(parseDate(str));

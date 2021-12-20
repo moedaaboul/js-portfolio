@@ -30,30 +30,3 @@ function toggleElement(container, element) {
 toggleBtn.addEventListener("click", function () {
   toggleElement(menuContainer, menu);
 });
-
-// export async function fetchGithubRepo(URL) {
-//   try {
-//     const response = await fetch(URL);
-//     return await response.json();
-//   } catch (error) {
-//     console.error(error);
-//   }
-// }
-
-// window.addEventListener("DOMContentLoaded", async () => {
-//   let data = await fetchGithubRepo(
-//     "https://api.github.com/users/moedaaboul/repos"
-//   );
-//   console.log(data);
-//   const repoRaw = data.filter((obj) => obj.name === "jobs-finder")[0];
-//   console.log(repoRaw);
-//   const repo = {
-//     url: repoRaw.html_url,
-//     license: repoRaw.license,
-//     topics: repoRaw.topics,
-//     language: repoRaw.language,
-//     description: repoRaw.description,
-//     data: repoRaw.created_at,
-//   };
-//   console.log(repo);
-// });

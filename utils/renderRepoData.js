@@ -6,11 +6,6 @@ import { renderImages, images } from "./images.js";
 const repoModal = document.querySelector(".repo-modal");
 // using string templates render individual job data for modal view upon the primary card h3 click
 
-const tags = `          
-<span class="tag is-success ml-1">HTML</span>
-<span class="tag is-success">CSS</span>
-<span class="tag is-success">JavaScript</span>`;
-
 // to add creation data and completion dates
 
 export function renderRepoData({
