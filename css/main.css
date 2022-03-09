@@ -115,7 +115,7 @@ SOCIAL MEDIA
 }
 
 .social-media .icon:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 120%;
   height: 120%;
@@ -204,5 +204,42 @@ html {
   .row-1 .card img {
     max-height: 190px;
     min-height: 190px;
+  }
+}
+
+/* slide right animation */
+
+.is-slider-right {
+  transition: all 0.3s ease-in-out 0s;
+  animation: 1.5s cubic-bezier(1, 0.29, 0, 1.18) 0s 1 normal none running
+    slideRight;
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-150%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* slide up animation */
+
+.is-slider-up {
+  transition: all 0.3s ease-in-out 0s;
+  animation: 1s ease-in-out 0s 1 normal none running slideUp;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(300%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
