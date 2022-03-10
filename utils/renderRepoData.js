@@ -1,9 +1,10 @@
-import { renderTags } from "./renderTags.js";
-import { parseDate } from "./parseDate.js";
-import { parseTitle } from "./parseTitle.js";
-import { renderImages, images } from "./images.js";
+import { renderTags } from './renderTags.js';
+import { parseDate } from './parseDate.js';
+import { parseTitle } from './parseTitle.js';
+import { renderImages, images } from './images.js';
+import { renderURL } from './deployments.js';
 
-const repoModal = document.querySelector(".repo-modal");
+const repoModal = document.querySelector('.repo-modal');
 // using string templates render individual job data for modal view upon the primary card h3 click
 
 // to add creation data and completion dates
@@ -19,8 +20,8 @@ export function renderRepoData({
   const modalString = `
   <div class="modal-background"></div>
   <div class="card modal-content has-background-white py-5 px-5">
-  <header class="card-header hero is-success">
-  <h2 class="card-header-title is-white">${parseTitle(title)}</h2>
+  <header class="card-header hero has-background-dark">
+  <h2 class="card-header-title has-text-success">${parseTitle(title)}</h2>
 </header>
 <div class="creation-date-container is-flex is-align-items-center mb-2 pt-3">
 <img class="mr-1" src="./images/calendar.svg" alt="git-tag" />
@@ -37,7 +38,7 @@ ${description}
         <p class="card-footer-item is-flex is-align-items-center">
         <img class="mr-1" src="./images/eye.svg" alt="git-tag" />  
         <span>
-            <a href="https://moedaaboul.github.io/${title}/">Preview</a>
+            <a href="${renderURL(title)}/">Preview</a>
           </span>
         </p>
         <p class="card-footer-item">
