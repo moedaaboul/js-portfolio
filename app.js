@@ -3,6 +3,7 @@ import './utils/getRepoData.js';
 import './utils/renderRepoData.js';
 import './utils/renderTags.js';
 import './utils/animation.js';
+import './utils/squareAnimation.js';
 
 const toggleBtn = document.querySelector('.burger');
 const menuContainer = document.querySelector('.menu-container');
