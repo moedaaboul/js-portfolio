@@ -9,7 +9,7 @@ VARIABLES
   /* TRANSITIONS */
   --toggle-transition: height 350ms ease-in-out;
 
-  --icon-animation: 0.7s 1 forwards;
+  --icon-animation: 3s infinite forwards;
 
   --social-media-green: #10ac84;
 
@@ -115,7 +115,7 @@ SOCIAL MEDIA
   transition: all 0.2;
 }
 
-.social-media .icon:hover i {
+.social-media i {
   transform: scale(1.3);
   color: var(--light-grey);
 }
@@ -131,8 +131,9 @@ SOCIAL MEDIA
   transform: rotate(45deg);
 }
 
-.social-media .icon:hover:before {
+.social-media .icon:before {
   animation: icon-animation var(--icon-animation);
+  /* animation-iteration-count: infinite; */
 }
 
 .social-media {
@@ -208,8 +209,8 @@ html {
   }
 
   .row-1 .card img {
-    max-height: 190px;
-    min-height: 190px;
+    /* max-height: 190px;
+    min-height: 190px; */
   }
 }
 
@@ -303,4 +304,8 @@ html {
   to {
     opacity: 1;
   }
+}
+
+.has-background-dark {
+  background-color: #343a40;
 }
