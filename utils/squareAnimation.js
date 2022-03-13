@@ -1,15 +1,17 @@
 const squareWrappers = document.querySelectorAll('.square-wrapper');
 
+// scroll intersection observer for square
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     const square = entry.target.querySelector('.square');
 
+    // square animation added
     if (entry.isIntersecting) {
       square.classList.add('square-animation');
-      return; // if we added the class, exit the function
+      return;
     }
 
-    // We're not intersecting, so remove the class!
+    // When not intersecting
     square.classList.remove('square-animation');
   });
 });
@@ -17,7 +19,6 @@ const observer = new IntersectionObserver((entries) => {
 observer.observe(document.querySelector('.square-wrapper'));
 
 document.addEventListener('DOMContentLoaded', function () {
-  // querySelector - it returns the element within the document that matches the specified selector
   Array.from(squareWrappers).forEach(function (element) {
     observer.observe(element);
   });

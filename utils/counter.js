@@ -1,3 +1,5 @@
+/* Carter Li https://css-tricks.com/animating-number-counters/#the-new-school-css-solution */
+
 export function animateValue(obj, start, end, duration) {
   let startTimestamp = null;
   const step = (timestamp) => {

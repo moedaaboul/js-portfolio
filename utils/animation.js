@@ -1,13 +1,14 @@
+// scroll intersection observer for sub-title
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     const subtitle = entry.target.querySelector('.sub-title');
 
     if (entry.isIntersecting) {
       subtitle.classList.add('is-slider-up');
-      return; // if we added the class, exit the function
+      return;
     }
 
-    // We're not intersecting, so remove the class!
+    // When not intersecting, remove the class!
     subtitle.classList.remove('is-slider-up');
   });
 });
