@@ -2,6 +2,7 @@ import { fetchGithubRepo } from './fetchGithubRepo.js';
 import { renderRepoData } from './renderRepoData.js';
 import { renderTags } from './renderTags.js';
 import { fetchCommit } from './fetchCommit.js';
+import { animateValue } from './counter.js';
 
 const repoModal = document.querySelector('.repo-modal');
 const repoList = document.querySelector('.portfolio');
@@ -34,6 +35,12 @@ repoList.addEventListener('click', async function (event) {
       };
       console.log(repo);
       renderRepoData(repo); // after repos data is retrieved from fetch, individual repo info is rendered on screen through a modal
+      const obj = document.getElementById('value');
+      const commitSvg = document.querySelector('.commit-svg');
+      console.log(commitSvg);
+      const commits = +obj.getAttribute('data-value');
+      commitSvg.classList.add('icn-spinner');
+      animateValue(obj, commits * 0.5, commits, 1000);
       repoModal.classList.add('is-active'); // modal status to active to enable the following event listener to exit modal screen on modal-background click
 
       const modalBg = document.querySelector('.modal-background');

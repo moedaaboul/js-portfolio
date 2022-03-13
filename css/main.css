@@ -319,3 +319,19 @@ html {
 .has-background-dark-blue {
   background-color: #3448c5;
 }
+
+/* spin animation */
+
+.icn-spinner {
+  animation: spin-animation 1s 1s;
+  display: inline-block;
+}
+
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1077deg);
+  }
+}

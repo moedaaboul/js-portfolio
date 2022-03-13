@@ -54,8 +54,8 @@ ${description}
      </p>
       </div>
       <div class="license-container is-flex is-align-items-center mb-2">
-  <img src="./images/git-commit.svg" alt="git-commit" />
-  <p class="ml-2">${commits} commits</p>
+  <img src="./images/git-commit.svg" class="commit-svg" alt="git-commit" />
+  <p class="ml-2" id="value" data-value="${commits}">${commits} commits</p>
   </div>
   <div class="license-container is-flex is-align-items-center mb-2">
   <img src="./images/award.svg" alt="git-commit" />
