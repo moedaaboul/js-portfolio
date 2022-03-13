@@ -30,7 +30,7 @@ export function renderRepoData({
 <p class="repo-description">
 ${description}
 </p>
-    <div class="card-content">
+    <div class="card-content p-2">
       <figure class="image image is-3by2">
         <img src="./images/${renderImages(title)}" />
       </figure>
