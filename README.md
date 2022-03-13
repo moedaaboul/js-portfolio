@@ -6,6 +6,8 @@ Live demo [_here_](https://moedaaboul.github.io/).
 ## Table of Contents
 
 - [General Info](#general-information)
+- [Appearance](#appearance)
+- [Github stats](#github-api)
 - [Technologies Used](#technologies-used)
 - [Setup](#setup)
 - [Project Status](#project-status)
@@ -26,7 +28,15 @@ The purpose of this app is to showcase my portfolio.
 
 ## Appearance
 
+Below depicts full home page view of my portfolio app:
+
 ![Full page view of portfolio](./assets/my-portfolio.png)
+
+## Github API
+
+Below depicts github stats, demo and views functionality per showcased single repo:
+
+![Github stats for legogram](./assets/github-stats.gif)
 
 ## Technologies Used
 
