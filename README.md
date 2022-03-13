@@ -24,6 +24,10 @@ The purpose of this app is to showcase my portfolio.
 - Screenshot or gifs of repositories provided in cards and modal views.
 - Polished interface with smooth scrolling and links to downloadable pdf resume.
 
+## Appearance
+
+![Full page view of portfolio](./assets/portfolio.png)
+
 ## Technologies Used
 
 - Github API
@@ -45,10 +49,11 @@ Project is: complete.
 
 ## Contact
 
-Created by  -[@moedaaboul](https://github.com/moedaaboull)
+Created by -[@moedaaboul](https://github.com/moedaaboull)
 
 - Feel free to contact me!
 
 ## LICENSE
+
 This work is licensed under
 [MIT](https://github.com/moedaaboul/moedaaboul.github.io/blob/main/LICENSE).
