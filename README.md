@@ -26,7 +26,7 @@ The purpose of this app is to showcase my portfolio.
 
 ## Appearance
 
-![Full page view of portfolio](./assets/portfolio.png)
+![Full page view of portfolio](./assets/my-portfolio.png)
 
 ## Technologies Used
 
