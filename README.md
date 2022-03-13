@@ -34,9 +34,9 @@ Below depicts full home page view of my portfolio app:
 
 ## Github API
 
-Below depicts github stats, demo and views functionality per showcased single repo:
+Below depicts github stats, slider demo and views functionality per showcased single repo:
 
-![Github stats for legogram](./assets/github-stats.gif)
+![Github stats for legogram showing spinning and counter animations in commit icon and number respectively.](./assets/github-stat.gif)
 
 ## Technologies Used
 
