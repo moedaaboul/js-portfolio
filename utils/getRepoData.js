@@ -3,6 +3,7 @@ import { renderRepoData } from './renderRepoData.js';
 import { renderTags } from './renderTags.js';
 import { fetchCommit } from './fetchCommit.js';
 import { animateValue } from './counter.js';
+import { renderRepoSlideshow } from './sliderModal.js';
 
 const repoModal = document.querySelector('.repo-modal');
 const repoList = document.querySelector('.portfolio');
@@ -41,6 +42,9 @@ repoList.addEventListener('click', async function (event) {
       const commits = +obj.getAttribute('data-value');
       commitSvg.classList.add('icn-spinner');
       animateValue(obj, commits * 0.5, commits, 1000);
+      const reposlideshowContainer = document.querySelector('.repo-slideshow');
+      console.log(reposlideshowContainer);
+      renderRepoSlideshow(reposlideshowContainer);
       repoModal.classList.add('is-active'); // modal status to active to enable the following event listener to exit modal screen on modal-background click
 
       const modalBg = document.querySelector('.modal-background');

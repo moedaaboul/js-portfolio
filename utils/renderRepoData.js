@@ -31,9 +31,7 @@ export function renderRepoData({
 ${description}
 </p>
     <div class="card-content p-2">
-      <figure class="image image is-3by2">
-        <img src="./images/${renderImages(title)}" />
-      </figure>
+    ${renderImages(title)}
       <footer class="card-footer">
         <p class="card-footer-item is-flex is-align-items-center">
         <img class="mr-1" src="./images/eye.svg" alt="git-tag" />  
