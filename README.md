@@ -41,12 +41,13 @@ Below depicts github stats, slider demo and views functionality per showcased si
 ## Technologies Used
 
 - Github API
-- Bulma framework
-- Font Awesome
-- Formspree
+- IntersectionObserver API
 - JavaScript
 - HTML
 - CSS
+- Bulma framework
+- Font Awesome
+- Formspree
 
 ## Setup
 
@@ -56,6 +57,11 @@ Below depicts github stats, slider demo and views functionality per showcased si
 ## Project Status
 
 Project is: complete.
+
+## Acknowledgements
+
+- www.freeicons.io
+- www.vectorlogo.zone
 
 ## Contact
 
