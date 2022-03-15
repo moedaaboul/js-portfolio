@@ -16,11 +16,8 @@ function setHeight(element, height) {
 }
 
 function toggleElement(container, element) {
-  console.log(element.style.height);
   let containerHeight = container.getBoundingClientRect().height;
   let elementHeight = element.getBoundingClientRect().height;
-  console.log(containerHeight);
-  console.log(elementHeight);
   if (containerHeight === 0) {
     setHeight(container, elementHeight);
   } else {

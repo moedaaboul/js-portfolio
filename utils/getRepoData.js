@@ -17,13 +17,10 @@ repoList.addEventListener('click', async function (event) {
       const name = event.target.innerHTML;
       const data = await fetchGithubRepo(url);
       const contributors = await fetchCommit(name);
-      console.log(contributors);
       const contributions = contributors
         .filter((e) => e.login === 'moedaaboul')
         .map((e) => e.contributions)[0];
-      console.log(contributions);
       const repoRaw = data.filter((obj) => obj.name === name)[0];
-      console.log(repoRaw);
       const repo = {
         title: repoRaw.name,
         url: repoRaw.html_url,
@@ -34,16 +31,13 @@ repoList.addEventListener('click', async function (event) {
         date: repoRaw.created_at,
         commits: contributions,
       };
-      console.log(repo);
       renderRepoData(repo); // after repos data is retrieved from fetch, individual repo info is rendered on screen through a modal
       const obj = document.getElementById('value');
       const commitSvg = document.querySelector('.commit-svg');
-      console.log(commitSvg);
       const commits = +obj.getAttribute('data-value');
       commitSvg.classList.add('icn-spinner');
       animateValue(obj, commits * 0.5, commits, 1000);
       const reposlideshowContainer = document.querySelector('.repo-slideshow');
-      console.log(reposlideshowContainer);
       renderRepoSlideshow(reposlideshowContainer);
       repoModal.classList.add('is-active'); // modal status to active to enable the following event listener to exit modal screen on modal-background click
 

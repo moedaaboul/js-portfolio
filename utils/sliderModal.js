@@ -2,7 +2,6 @@ const reposlideshowContainer = document.querySelector('.repo-slideshow');
 
 export function renderRepoSlideshow(element) {
   // querySelector - it returns the element within the document that matches the specified selector
-  console.log(reposlideshowContainer);
   var slideIndex = 0;
   showSlides();
 
