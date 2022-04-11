@@ -1,7 +1,7 @@
-# moedaaboul.github.io
+# js-portfolio
 
 This is a portfolio site using JavaScript and the Github API
-Live demo [_here_](https://moedaaboul.github.io/).
+Live demo [_here_](https://moedaaboul.github.io/js-portfolio/).
 
 ## Table of Contents
 
